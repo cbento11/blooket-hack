@@ -12,7 +12,7 @@ async function getName() {
     return data.name;
 };
 
-async function addCurrencies() {
+async function addCurrencies(1000) {
     const tokens = Number(prompt('How many tokens do you want to add to your account? (500 daily)'));
 
     if (tokens > 500) {
@@ -28,7 +28,7 @@ async function addCurrencies() {
         credentials: "include",
         body: JSON.stringify({
             addedTokens: tokens,
-            addedXp: 300,
+            addedXp: 3000,
             name: await getName()
         })
     });
